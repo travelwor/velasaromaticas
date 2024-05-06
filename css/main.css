@@ -1,0 +1,21 @@
+/* CSS Document */
+:root {
+  --theme-color: white;
+  --primary-color: #FF66CC;
+  --secundary-color: #00FF99;
+  --text-color-inverse: white;
+  --text-color: black;
+  --main2-shallow-color: #e5e5e5;
+}
+body {
+  font-family:"Times New Roman", Times, serif;
+  background: var(--theme-color);
+}
+
+a {
+ text-decoration: none;
+ color:#00FF99
+}
+
+
+

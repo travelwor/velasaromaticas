@@ -1,0 +1,75 @@
+/* CSS Document */
+.topheader {
+  box-shadow: 0 4px 5px var(--main2-shallow-color);
+  position: fixed;
+  background-color: var(--theme-color);
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.logo img {
+  border-radius: 300%;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 0 15px;
+}
+
+.menu a {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.menu a::after {
+  content: "aa";
+  background-color: var(--secundary-color);
+  position: absolute;
+  left: 0;
+  top: calc(100% + apx);
+  width: 100%;
+  height: 4px;
+  
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+,menu a.selected::after,
+,menu a:hover::after {
+  opacity: 0,8;
+}
+
+.menu a:hover {
+  color: var(--primary-color);
+}  
+
